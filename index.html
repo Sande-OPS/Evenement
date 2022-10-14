@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="Fr">
+	<title>Pratique</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="outils/style.css">
+</head>
+
+<body>
+	<header><h1 style="position: absolute;color: white;z-index: 500;font-size: 50px;">Gerer Tous vos evenement ici </h1>
+		<div class="flou">
+			<div class="cercle1"></div>
+			<div class="cercle2"></div>
+			<div class="cercle3"></div>
+			<div class="cercle4"></div>
+			<div class="cercle5"></div>
+			<div class="cercle6"></div>
+			<div class="cercle7"></div>
+			<div class="cercle8"></div>
+			<div class="cercle9"></div>
+			<div class="cercle10"></div>
+			<div class="cercle11"></div>
+			<div class="cercle12"></div>
+			<div class="cercle13"></div>
+			<div class="cercle14"></div>
+			<div class="cercle15"></div>
+			<div class="cercle16"></div>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li> <a href="index.html">Accueil</a>  </li>
+			<li> <a href="Connection.html">Compte</a> </li>
+			<li> <a href="#">Contact</a></li>
+			<li> <a href="lieux.html" class="EcranLarge">About-Us</a> </li>
+		</ul>
+	</nav>
+	<content>
+		<div class="centrer">
+			<h1>Evenement Professionnel</h1>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/soiree.jpg" ></a></div>
+				<span> Soiree d'entreprise </span> 
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/DinneAffaire.jpg"></a></div>
+				<span> Dinne d'affaire ,Dinner </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/promo.jpg" ></a></div>
+				<span> Promotion </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+			</div>
+		</div>
+		<div class="centrer">
+			<h1>Evenement Etudiant </h1>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/maracana_illustration.jpg" ></a></div>
+				<span> Gala Sportif </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/Ceremonie.png" ></a></div>
+				<span> Remise de Diplome </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/culture.jpg" ></a></div>
+				<span> journee culturel </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+		</div>
+		<div class="centrer">
+			<h1>Autres Evenements</h1>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/mariagd.jpg" ></a></div>
+				<span>  Mariage  </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/mereBebe.jpg" ></a></div>
+				<span> Bateme </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+			<div class="event">
+				<div class="image"><a href="Connection.html"><img src="evenement/anniversaire.jpg" ></a></div>
+				<span> Anniversaire </span>
+				<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile<br>ce aue jecrit est unitile
+				Cd sera les detail sur levenement en question
+			</div>
+		</div>
+	</content>
+	<footer>
+		
+	</footer>
+	<script>
+		//evenement sur la fenetre lorsqu'elle est reduite
+		window.addEventListener('resize',()=>{
+			//recuperation de la largeur de la fenetre 
+			var largeur = window.innerWidth;
+		
+			for (var indice = 16; indice > 0; indice--) {
+				element= 'cercle'+indice;
+				var cube_indexer = document.getElementsByClassName(element)[0],
+					style_cube=window.getComputedStyle(cube_indexer);
+				var cube_margeGauche = style_cube.getPropertyValue('margin-left').replace("px","")-0,
+					cube_taille		 = style_cube.getPropertyValue('width').replace("px","") -0;
+				var	difference = (cube_margeGauche + cube_taille) - largeur + 30;
+
+				if (difference >= 0) {
+					cube_indexer.style.display="none";
+				}
+				else{
+					cube_indexer.style.display="block";
+					break;
+				}
+				
+			}
+			
+		});
+		window.addEventListener('load',()=>{
+			//recuperation de la largeur de la fenetre 
+			var largeur = window.innerWidth;
+		
+			for (var indice = 16; indice > 0; indice--) {
+				element= 'cercle'+indice;
+				var cube_indexer = document.getElementsByClassName(element)[0],
+					style_cube=window.getComputedStyle(cube_indexer);
+				var cube_margeGauche = style_cube.getPropertyValue('margin-left').replace("px","")-0,
+					cube_taille		 = style_cube.getPropertyValue('width').replace("px","") -0;
+				var	difference = (cube_margeGauche + cube_taille) - largeur + 60;
+				if (difference >= 0) {
+					cube_indexer.style.display="none";
+				}
+				else{
+					cube_indexer.style.display="block";
+					break;
+				}
+				
+			}
+			
+		});
+	</script>
+</body>
+</html>

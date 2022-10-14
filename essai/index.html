@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="clic">Cacher</div>
+    <div id="essai"></div>
+     -->
+     <form action="essai.php" method="post" onsubmit="return verifie()">
+         <input type="text" id="text"><br>
+         <input type="submit" value="envoyer">
+     </form>
+    <style>
+        div#essai{
+            height: 100px;
+            width: 100px;
+            background: red;
+            transition: transform .5s;
+        }
+        div.clic{
+            width: 2cm;
+            height: 15px;
+            color: white;
+            background: blue;
+            margin: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // var div_essai= document.getElementById("essai"),
+        //     bouton = document.getElementsByClassName('clic')[0];
+        //     numero_clic=0;
+        //     function jongler(element,pariter){
+                    
+        //             console.log(pariter);
+        //             if (pariter==1) {
+        //                 element.style.transform='scale(0)';
+        //             } else {
+        //                 element.style.transform='scale(1)';
+        //             }
+        //     }
+        // bouton.addEventListener('click',()=>{
+        //     numero_clic++;
+        //     jongler(div_essai,numero_clic);
+        //     if (numero_clic==2) {
+        //         numero_clic=0;
+        //     }
+        // });
+        var formulaire = document.getElementById('formulaire');
+        function verifie() {
+            var saisie = document.getElementById('text');
+            if (saisie.value=="") {
+                alert("ce formulaire ne peut etre envoyer");
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>

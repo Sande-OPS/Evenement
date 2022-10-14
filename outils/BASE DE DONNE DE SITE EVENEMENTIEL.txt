@@ -1,0 +1,23 @@
+##### BASE DE DONNE DE SITE EVENEMENTIEL #####
+
+LISTE DES TABLES 
+COMPTE_CLIENT
+    code_client
+    nom_client
+    numero_telephone
+    mail
+    mot_de_passe
+    
+DEMANDE_EVENEMENT
+    code_demande
+    somme_evenement
+    montant_verset
+    montant_restant
+
+ESPACE_EVENEMENT
+    localiter
+    superficie
+    taille
+    qualite_espace
+
+
