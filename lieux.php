@@ -6,14 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="outils/style.css">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li> <a href="index.html">Accueil</a>  </li>
-			<li> <a href="Connection.html">Compte</a> </li>
-			<li> <a href="#">Contact</a></li>
-			<li> <a href="lieux.html">About-Us</a> </li>
-		</ul>
-	</nav>
+	<?php include("navigation.php")?>
 	<content style="height: 38cm;">
 		<div style="text-align: center;font-size: 40px;font-weight: bold;color: #4caf50;background: #ffb74d;">Réservation de place et choix du Repas</div>
 		<h1>Espace Professionnel</h1>

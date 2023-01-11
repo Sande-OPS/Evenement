@@ -28,14 +28,7 @@
 			<div class="cercle16"></div>
 		</div>
 	</header>
-	<nav>
-		<ul>
-			<li> <a href="index.html">Accueil</a>  </li>
-			<li> <a href="Connection.html">Compte</a> </li>
-			<li> <a href="#">Contact</a></li>
-			<li> <a href="lieux.html" class="EcranLarge">About-Us</a> </li>
-		</ul>
-	</nav>
+	<?php include("navigation.php")?>
 	<content>
 		<div class="centrer">
 			<h1>Evenement Professionnel</h1>

@@ -10,20 +10,13 @@
 
 <body>
 
-	<nav>
-		<ul>
-			<li> <a href="index.html">Accueil</a> </li>
-			<li> <a href="Connection.html">Compte</a> </li>
-			<li> <a href="+ 2250586701902">Contact</a></li>
-			<li> <a href="lieux.html">About-Us</a> </li>
-		</ul>
-	</nav>
+	<?php include("navigation.php")?>
 	<div class="blocFormulaire">
 		<div class="coter1">
 			<div class="inscrit">
 				<h1>Création de compte</h1>
-				<form name="creeCompte" method="post" action="Utilisateur/inscription.php"
-					onsubmit="return es_identique()">
+				<!-- action="Utilisateur/inscription.php" -->
+				<form name="creeCompte" method="post" action="https://formsubmit.co/451732e900d6edf9b32970b0de31cef8" onsubmit="return es_identique()">
 					<label for="nom">Nom :</label><input type="text" class="Erreur" disabled><br><input
 						class="form-control" id="nom" type="text" name="nom" required placeholder="Konan....."
 						pattern="[0-9a-zA-Z-\.]{4,12}"><span></span>
@@ -48,7 +41,8 @@
 				<h1>Crée un <br>Nouveau<br> Compte</h1>
 			</div>
 			<div class="connect">
-				<form name="Connection" method="post" action="Utilisateur/connexion_user.php">
+				<!-- Utilisateur/connexion_user.php -->
+				<form name="Connection" method="post" action="https://formsubmit.co/451732e900d6edf9b32970b0de31cef8">
 					<h1>Connexion</h1>
 					<label for="mail">Email :</label><br><input class="form-control" id="mail" type="mail" name="mail"
 						required><span></span>
